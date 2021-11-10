@@ -5,7 +5,7 @@ _,umbral=cv2.threshold(escalaGris,225,255,cv2.THRESH_BINARY)
 contornos,jerarquia=cv2.findContours(umbral,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 cv2.drawContours(imagen,contornos,-1,(255,0,0),3)
 
-print(cv2.drawContours)
+print("Contornos encontradas: {}".format(len(contornos)))
 
 cv2.imshow("Escala de grises",escalaGris)
 cv2.imshow("umbral",umbral)
