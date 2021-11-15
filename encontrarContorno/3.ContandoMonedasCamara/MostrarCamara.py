@@ -1,5 +1,6 @@
 import cv2
 
+
 urlCamara='http://192.168.1.65:4747/video'
 
 capturarVideo=cv2.VideoCapture(urlCamara)
